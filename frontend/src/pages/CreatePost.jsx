@@ -110,7 +110,7 @@ const CreatePost = () => {
             handleSurpriseMe={handleSurpriseMe}
           />
 
-          <div className="mx-auto relative bg-gradient-to-tl from-pink-300 to-purple-300 border border-violet-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-pink-500 w-64 p-3 h-64 flex justify-center items-center">
+          <div className="mx-auto relative bg-gradient-to-tl from-pink-300 to-purple-300 border border-violet-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-pink-500 w-64  h-64 flex justify-center items-center">
             {form.photo ? (
               <img
                 src={form.photo}

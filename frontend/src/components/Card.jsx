@@ -10,12 +10,12 @@ const Card = ({ _id, name, prompt, photo }) => (
       src={photo}
       alt={prompt}
     />
-    <div className="flex-col max-h-[94.5%] opacity-0 group-hover:opacity-95 transition-all duration-200 absolute bottom-0 left-0 right-0 bg-pink-400/30 backdrop-blur-md m-2 p-4 rounded-md">
+    <div className="flex-col max-h-[94.5%] opacity-0 group-hover:opacity-95 transition-all duration-200 absolute bottom-0 left-0 right-0 bg-slate-950/85 backdrop-blur-md m-2 p-4 rounded-md">
       <p className="text-white text-base overflow-y-auto prompt">{prompt}</p>
 
       <div className="mt-5 flex justify-between items-center gap-2">
         <div className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded-full object-cover bg-slate-950 flex justify-center items-center text-white text-xs font-bold">{name[0]}</div>
+          <div className="w-7 h-7 rounded-full object-cover bg-gradient-to-br from-pink-500 to-violet-600 flex justify-center items-center text-white text-base font-extrabold">{name[0]}</div>
           <p className="text-white text-sm">{name}</p>
         </div>
         <button type="button" onClick={() => downloadImage(_id, photo)} className="outline-none rounded-full bg-pink-500 hover:bg-pink-600 border-none">
