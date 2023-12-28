@@ -24,7 +24,7 @@ const CreatePost = () => {
     setForm({ ...form, prompt: randomPrompt });
   };
 
-  const node_env = import.meta.env.VITE_APP_NODE_ENV
+  const node_env = "production"
 
   const baseUrl = node_env === "production" ? "https://pixl-backend.vercel.app" : "http://localhost:8080"
 
